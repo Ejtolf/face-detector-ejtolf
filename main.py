@@ -44,7 +44,7 @@ def show_detection_info(num_faces, elapsed_time):
     )
 
     info_text = (
-        f"Обнаружено лиц: {text_variant}, Время обнаружения: {elapsed_time:.2f} секунд"
+        f"Обнаружено лиц: {text_variant}; Время обнаружения: {elapsed_time:.2f} секунд"
     )
     info_label.config(text=info_text)
 
@@ -60,7 +60,7 @@ button_detect.grid(row=1, column=0)
 button_save = tk.Button(root, text="Сохранить", command=save_image)
 button_save.grid(row=1, column=1)
 
-info_label = tk.Label(root, text="Обнаружено лиц: 0nВремя обнаружения: 0.00 секунд")
+info_label = tk.Label(root, text="Обнаружено лиц: 0; Время обнаружения: 0.00 секунд")
 info_label.grid(row=2, column=0, columnspan=2)
 
 filepath = None
